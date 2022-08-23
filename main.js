@@ -35,6 +35,13 @@ while (!Number.isInteger(+m) || m === ''|| n===null) {
     m = prompt('please specify the M value - integer number');
 }
 
+//Check that N is less than M
+
+while (m<n) {
+    alert(`Wrong value, please add integer number bigger than ${n}`);
+    m = prompt('please specify the M value - integer number');
+}
+
 
 //Confirm that we can use even numbers
 
