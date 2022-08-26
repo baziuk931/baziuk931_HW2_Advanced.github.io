@@ -25,22 +25,33 @@ console.log(skipEvenNumber);
 if (skipEvenNumber) {
     if (!(n % 2)) {
         n++;
-    }
 
         for (let i = n; i <= m; i += 2) {
 
             result += i;
+            console.log(result);
         }
+
+    }
+    else {
+
+        for (let i = Number(n); i <= m; i += 2) {
+
+            result += i;
+            console.log(result);
+
+        }
+
+    }
 }
 else {
     for (let i = n; i <= m; i++) {
 
         result += Number(i);
+        console.log(result);
 
     }
 }
 
 document.writeln(`The sum of numbers is ${result}.`);
-
-
 
