@@ -14,7 +14,7 @@ while (!Number.isInteger(Number(m)) || m === '' || m < 0) {
     m = prompt('please specify the M value - integer number');
 }
 
-while (m < n) {
+while (m <= n) {
     alert(`Wrong value, please add integer number bigger than ${n}`);
     m = prompt('please specify the M value - integer number');
 }
